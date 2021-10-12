@@ -1,0 +1,82 @@
+/*General configurations*/
+
+body{
+background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+font-family: Lato, sans-serif; /* Tror ikke lato virker*/
+font-size: 14px;
+
+}
+
+main{
+  font-size: 1.2rem;
+}
+
+h1 h2 h3{
+  font-family: Montserrat, sans-serif;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2.2rem;
+}
+
+p{
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+
+/* Header */
+
+header{
+  max-height: 55vh;
+  background-image: url(assets/img/studentsbg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* The background image will be scaled “as large as possible to fill the 
+container, stretching the image if necessary. If the proportions of the 
+image differ from the element, it is cropped either vertically or 
+horizontally so that no empty space remains” */
+
+}
+
+.header  .div{
+  background-color:  #c5192d;
+  
+  margin-top: 4rem;
+}
+
+/* Main */
+
+main{
+  box-shadow: 0 0 1px 0 darkgray;
+  background-color: whitesmoke;
+  padding: 5px;
+  
+
+}
+
+#intro-container{
+  background-color:  #c5192d;
+  margin: 20px;
+  padding: 20px 10px 20px 10px;
+  
+  
+}
+ul.intro-container > li:nth-child(1) {
+  list-style: "\26A1   ";
+  list-style-position: outside;
+}
+
+
+/*
+
+@media only screen and (max-width: 960px) {
+    body {
+      background-color: lightblue;
+    }
+  }
