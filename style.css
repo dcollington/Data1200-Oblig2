@@ -37,6 +37,7 @@ header{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  box-sizing: border-box;
   /* The background image will be scaled “as large as possible to fill the 
 container, stretching the image if necessary. If the proportions of the 
 image differ from the element, it is cropped either vertically or 
