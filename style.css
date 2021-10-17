@@ -1,5 +1,25 @@
 /*General configurations*/
 
+@font-face {
+  font-family: "Lato";
+  src: url('698242188-Lato-Bla.eot');
+  src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
+  url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
+  url('698242188-Lato-Bla.woff') format('woff'),
+  url('698242188-Lato-Bla.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url(/assets/fonts/Montserrat-Bold.ttf);
+ 
+}
+
+
+@media only screen and (max-width: 600px) {
+
 body{
 background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 font-family: Lato, sans-serif; /* Tror ikke lato virker*/
@@ -68,16 +88,65 @@ main{
   
   
 }
-ul.intro-container > li:nth-child(1) {
-  list-style: "\26A1   ";
-  list-style-position: outside;
+li:nth-child(3n+1)::before {
+  content: "\1F64C";          /* Emoji hender */
+}
+
+li:nth-child(3n+2)::before {
+  content: "\1F3EB";          /* Emoji skole */
+}
+
+li:nth-child(3n+3)::before {
+  content: "\1F4DA";          /* Emoji bøker */
+}
+
+ul {
+  list-style: none;           /* remove the default */
+}
+
+}
+
+@media only screen and (max-width: 960px) and (min-width: 600px) {
+
+  body{
+    font-size: 16px;
+  }
+  
+  .header{
+    height: 65vh;
+  }
+
+  .header, #main, footer{
+    width: 85%;
+  }
+
+  article{
+    display: inline-block;
+    margin-right: -10%;
+    width: 45%;
+    padding-right: 10%;
+  }
+
+  #intro-container{
+    background-color:#c5192d ;
+    background-size: 50% auto;
+    width: 50%;
+  }
+
+
 }
 
 
-/*
+@media only screen and (min-width: 960px) {
 
-@media only screen and (max-width: 960px) {
-    body {
-      background-color: lightblue;
-    }
-  }
+body{
+  font-size: 24px;
+}
+.header{
+  height: 65vh;
+}
+.header, #main, footer{
+  width: 70%;
+}
+
+}
