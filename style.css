@@ -18,76 +18,14 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+/* Main CSS */
 
 body{
-background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-font-family: Lato, sans-serif; /* Tror ikke lato virker*/
-font-size: 14px;
-
-}
-
-main{
-  font-size: 1.2rem;
-}
-
-h1 h2 h3{
-  font-family: Montserrat, sans-serif;
-}
-
-h1{
-  font-size: 4rem;
-}
-
-h2{
-  font-size: 2.2rem;
-}
-
-p{
-  max-width: 70ch;
-  line-height: 1.5;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+font-family: Lato, sans-serif;
 }
 
 
-/* Header */
-
-header{
-  max-height: 55vh;
-  background-image: url(assets/img/studentsbg.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  box-sizing: border-box;
-  /* The background image will be scaled “as large as possible to fill the 
-container, stretching the image if necessary. If the proportions of the 
-image differ from the element, it is cropped either vertically or 
-horizontally so that no empty space remains” */
-
-}
-
-.header  .div{
-  background-color:  #c5192d;
-  
-  margin-top: 4rem;
-}
-
-/* Main */
-
-main{
-  box-shadow: 0 0 1px 0 darkgray;
-  background-color: whitesmoke;
-  padding: 5px;
-  
-
-}
-
-#intro-container{
-  background-color:  #c5192d;
-  margin: 20px;
-  padding: 20px 10px 20px 10px;
-  
-  
-}
 li:nth-child(3n+1)::before {
   content: "\1F64C";          /* Emoji hender */
 }
@@ -104,6 +42,109 @@ ul {
   list-style: none;           /* remove the default */
 }
 
+h1 h2 h3{
+  font-family: Montserrat, sans-serif;
+}
+
+
+header{
+  background-image: url(assets/img/studentsbg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  max-height: 55vh;
+  padding: 2rem;
+  margin-bottom: 15%;
+}
+
+
+header > div{
+  background-color: #c5192d;
+ 
+  margin-top: 17rem;
+  color: aliceblue;
+  padding: 5%;
+  
+}
+article{
+  margin-bottom: 4rem;
+  margin-right: 5rem;
+
+}
+
+#intro-container > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+
+main{
+  box-shadow: 0 0 1px 0 darkgray;
+  background-color: whitesmoke;
+  padding: 5px;
+}
+
+#intro-container{
+  background-color:  #c5192d;
+  margin: 20px;
+  padding: 20px 10px 20px 10px;
+  
+  
+}
+
+
+footer{
+  background-color:  #c5192d;
+  padding: 5%;
+  margin-top: 2rem;
+}
+
+
+  
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+
+body{
+font-size: 14px;
+}
+
+main{
+  font-size: 1.2rem;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2.2rem;
+}
+
+p{
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+
+img{
+  width: 100%;
+}
+
+
+article:nth-child(3) { 
+  display: inline-block;
+  vertical-align: top;
+  
+}
+  
+article:nth-child(3) img { 
+display: inline-block; 
+
+  }
 }
 
 @media only screen and (max-width: 960px) and (min-width: 600px) {
@@ -112,28 +153,47 @@ ul {
     font-size: 16px;
   }
   
-  .header{
+  header{
     height: 65vh;
+    
   }
 
-  .header, #main, footer{
+  .header, #main, .footer{
     width: 85%;
   }
 
   article{
     display: inline-block;
     margin-right: -10%;
-    width: 45%;
     padding-right: 10%;
+    
   }
 
   #intro-container{
     background-color:#c5192d ;
-    background-size: 50% auto;
-    width: 50%;
+    background: linear-gradient(90deg, #c5192d 50%, #f5f5f5 50%);
+    display: block;
+    
   }
 
+  #intro-container > div{
+    display: inline-block;
+    
+    width: 45%;
+    
+  }
 
+  article > div{
+    width: 45%;
+    display: inline-block;
+  }
+
+  article > img{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  
+  }
 }
 
 
@@ -141,12 +201,49 @@ ul {
 
 body{
   font-size: 24px;
+  margin-left: 15%;
+  margin-right: 15%;
+  
 }
-.header{
+header{
   height: 65vh;
 }
-.header, #main, footer{
+
+#main{
+  margin: 20%;
+}
+.header, #main, .footer{
   width: 70%;
 }
 
+#intro-container{
+  display: block;
+  background: linear-gradient(90deg, #c5192d 50%, #f5f5f5 50%);
+  
+}
+
+#intro-container > div{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  
+  
+}
+
+.article{
+  padding-right: 10%;
+}
+article > div{
+  width: 45%;
+  display: inline-block;
+  padding-left: 2%;
+}
+
+article > img{
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 2%;
+
+  }
 }
