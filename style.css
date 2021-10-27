@@ -134,24 +134,28 @@ img{
   width: 100%;
 }
 
+article:nth-child(3) {
+  transform: rotate(180deg);
+}
 
-article:nth-child(3) { 
-  display: inline-block;
-  vertical-align: top;
+article:nth-child(3) >div {
+  transform: rotate(180deg);
+}
   
 }
   
 article:nth-child(3) img { 
-display: inline-block; 
+  transform: rotate(180deg); 
 
   }
-}
+
 
 @media only screen and (max-width: 960px) and (min-width: 600px) {
 
   body{
     font-size: 16px;
   }
+
   
   header{
     height: 65vh;
