@@ -61,7 +61,7 @@ header{
 header > div{
   background-color: #c5192d;
  
-  margin-top: 17rem;
+  margin-top: 15rem;
   color: aliceblue;
   padding: 5%;
   
@@ -127,6 +127,10 @@ h2{
 p{
   max-width: 70ch;
   line-height: 1.5;
+}
+
+header > div{
+  margin-top: 4rem;
 }
 
 
