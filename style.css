@@ -67,9 +67,7 @@ header > div{
   
 }
 article{
-  margin-bottom: 4rem;
-  margin-right: 5rem;
-
+  margin: 20px
 }
 
 #intro-container > div {
@@ -114,7 +112,10 @@ font-size: 14px;
 
 main{
   font-size: 1.2rem;
+  display: block;
+  margin: 20px;
 }
+
 
 h1{
   font-size: 4rem;
@@ -136,6 +137,7 @@ header > div{
 
 img{
   width: 100%;
+  
 }
 
 article:nth-child(3) {
@@ -177,6 +179,8 @@ article:nth-child(3) img {
     
   }
 
+  
+
   #intro-container{
     background-color:#c5192d ;
     background: linear-gradient(90deg, #c5192d 50%, #f5f5f5 50%);
@@ -186,9 +190,7 @@ article:nth-child(3) img {
 
   #intro-container > div{
     display: inline-block;
-    
     width: 45%;
-    
   }
 
   article > div{
@@ -202,6 +204,10 @@ article:nth-child(3) img {
     vertical-align: top;
   
   }
+  img:nth-child(2){
+    margin-left: 35px;
+  }
+  
 }
 
 
@@ -232,12 +238,10 @@ header{
   display: inline-block;
   width: 45%;
   vertical-align: top;
-  
-  
 }
 
-.article{
-  padding-right: 10%;
+article{
+  margin-left: 1rem;
 }
 article > div{
   width: 45%;
@@ -249,7 +253,12 @@ article > img{
   width: 45%;
   display: inline-block;
   vertical-align: top;
-  padding-left: 2rem;
+    }
 
-  }
+
+    img:nth-child(2){
+      margin-left: 35px;
+    }
+    
+ 
 }
